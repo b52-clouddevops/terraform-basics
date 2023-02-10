@@ -6,4 +6,9 @@ provider "aws" {
 resource "aws_instance" "this" {
   ami                     = "ami-0c1d144c8fdd8d690"
   instance_type           = "t3.micro"
+
+  tags = {
+    Name = "HelloWorld-Tf-Server"
+  }
+
 }
