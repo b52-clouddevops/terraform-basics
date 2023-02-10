@@ -12,3 +12,22 @@ sudo yum -y install terraform
 ```
 
 ### terraform.tfvars is the default variables file that terraform picks up automatically. Anything apart from terraform.tfvars won't be picked by terraform by default, so you need to supply it explicitly.
+
+
+Variables :
+
+```
+1) default 
+2) terraform.auto.tfvars
+3) terraform.tfvars 
+4) Command Line Variables 
+5) Shell Variables 
+
+PS : Among all, SHELL variables will have the least priority and Command line variable -var will have the highest priority.
+```
+
+
+### Argument vs Attributes
+
+* Argument  : Properties of the resource we specify to create the resournce 
+* Attribute : This comes in to picture once the infra is created, properties like instance id, public id and private.
