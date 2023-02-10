@@ -10,3 +10,5 @@ sudo yum install -y yum-utils
 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
 sudo yum -y install terraform
 ```
+
+### terraform.tfvars is the default variables file that terraform picks up automatically. Anything apart from terraform.tfvars won't be picked by terraform by default, so you need to supply it explicitly.
