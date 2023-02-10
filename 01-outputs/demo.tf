@@ -3,7 +3,7 @@ output "sample" {
 }
 
 variable "demo" {
-    value = "Terraform Training"
+    default = "Terraform Training"
 }
 
 output "printing-demo" {
