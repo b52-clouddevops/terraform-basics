@@ -34,3 +34,9 @@ PS : Among all, SHELL variables will have the least priority and Command line va
 * Attribute : This comes in to picture once the infra is created, properties like instance id, public id and private.
 
 ```
+
+# Indentation  
+```
+Terraform is not indentations specific like ANSIBLE.
+But for better look and feel, it's always recommended to use standard spacing ,aling all your equal signs and two spaces in any new block.
+```
