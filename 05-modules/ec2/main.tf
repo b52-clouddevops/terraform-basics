@@ -7,3 +7,8 @@ resource "aws_instance" "my-ec2" {
 
 # Before you use the variable from the root module, ensure you declare an empty variable.
 variable "sg" {}
+
+
+output "public_ip_address" {
+    value = aws_instance.my-ec2.public_ip
+}
