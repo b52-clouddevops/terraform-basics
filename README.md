@@ -59,3 +59,12 @@ This is a file or a registry which tracks all of the infra provisioned by it.
 So, only when you make changes in the code, that means when you apply terraform or plan , terraform validates the real infra against your code and if there are no code changes "Terraform prompts you that there are no changes!!!", ins case if you update the changes on the infra manually or update the code , in either of the case, for terraform code matters and terraform code is the single source of truth.
 
 ```
+
+### Terraform Modules 
+
+```
+    *   Module is nothing but a folder with a group of resources
+    *   It helps you to keep the code dry 
+    *   You cannot pass the data from X-Module to Y-Module directly, it can only passed from X-Module to root module and then root module to Y-Module.
+
+```
