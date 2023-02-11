@@ -11,3 +11,8 @@ resource "aws_instance" "my-ec2" {
     Name = "Terraform-Server"
   }
 }
+
+# Prining the public ip address of the machine
+output "public_dns_print" {
+  value   =  aws_instance.my-ec2.public_dns
+}
