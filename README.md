@@ -74,5 +74,12 @@ So, only when you make changes in the code, that means when you apply terraform 
 ```
     1) Backend Module
     2) Root Module 
-    
+
+```
+
+
+### How to fetch th information of the already existing resources on cloud using terraform ?
+
+```
+    *   Datasource
 ```
