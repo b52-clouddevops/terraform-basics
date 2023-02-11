@@ -35,8 +35,27 @@ PS : Among all, SHELL variables will have the least priority and Command line va
 
 ```
 
-# Indentation  
+### Indentation  
 ```
 Terraform is not indentations specific like ANSIBLE.
 But for better look and feel, it's always recommended to use standard spacing ,aling all your equal signs and two spaces in any new block.
+```
+
+
+### What happens if you run the terraform apply multiple times ????
+
+```
+    a) Is it going to create the infrastructure n number of times ? No! But, how ????
+  sol) Terraform State File 
+
+```
+
+### What is Terraform State File ?
+
+```
+
+This is a file or a registry which tracks all of the infra provisioned by it.
+
+So, only when you make changes in the code, that means when you apply terraform or plan , terraform validates the real infra against your code and if there are no code changes "Terraform prompts you that there are no changes!!!", ins case if you update the changes on the infra manually or update the code , in either of the case, for terraform code matters and terraform code is the single source of truth.
+
 ```
