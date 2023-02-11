@@ -68,3 +68,11 @@ So, only when you make changes in the code, that means when you apply terraform 
     *   You cannot pass the data from X-Module to Y-Module directly, it can only passed from X-Module to root module and then root module to Y-Module.
 
 ```
+
+### Common Wording in modules
+
+```
+    1) Backend Module
+    2) Root Module 
+    
+```
