@@ -29,5 +29,8 @@ PS : Among all, SHELL variables will have the least priority and Command line va
 
 ### Argument vs Attributes
 
+```
 * Argument  : Properties of the resource we specify to create the resournce 
 * Attribute : This comes in to picture once the infra is created, properties like instance id, public id and private.
+
+```
