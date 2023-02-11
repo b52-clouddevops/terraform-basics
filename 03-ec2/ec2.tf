@@ -13,6 +13,6 @@ resource "aws_instance" "my-ec2" {
 }
 
 # Prining the public ip address of the machine
-output "public_dns_print" {
+output "public_dns_output" {
   value   =  aws_instance.my-ec2.public_dns
 }
