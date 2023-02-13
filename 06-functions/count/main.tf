@@ -4,7 +4,7 @@ provider "aws" {
 
 # creates ec2 instance
 resource "aws_instance" "my-ec2" {
-  count                   =  lenght(var.envs)              # length gives the length of the variable
+  count                   =  length(var.envs)              # length gives the length of the variable
   ami                     = "ami-0e3aeafe193bbdd4a"
   instance_type           = "t2.micro"
 
