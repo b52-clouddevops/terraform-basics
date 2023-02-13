@@ -3,6 +3,20 @@ resource "aws_instance" "my-ec2" {
   ami                     = data.aws_ami.lab-image.image_id
   instance_type           = "t2.micro"
   vpc_security_group_ids  = [var.sg]
+
+
+  provisioner "remote-exec" {
+    connection {
+      type     = "ssh"
+      user     = "centos"
+      password = "DevOps321"
+      host     = self.public_ip         # self. will only work if it's inside the resource ; If not, we need to use aws_instance.my-ec2.public_ip
+      }
+
+      inline = [
+          "ansible-pull -U https://github.com/b52-clouddevops/ansible.git -e COMPONENT=mongodb -e ENV=dev robot-pull.yml"
+        ]
+    }
 }
 
 # Before you use the variable from the root module, ensure you declare an empty variable.
