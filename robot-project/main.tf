@@ -1,10 +1,4 @@
-module "frontend" {
-    source      = "./ec2"
-    COMPONENT   = "frontend"
-    APP_VERSION = "0.0.1"
-}
-
-module "mongodb" {
+ module "mongodb" {
     source      = "./ec2"
     COMPONENT   = "mongodb"
     APP_VERSION = "null"
@@ -56,4 +50,10 @@ module "payment" {
     source      = "./ec2"
     COMPONENT   = "payment"
     APP_VERSION = "0.0.2"
+}
+
+module "frontend" {
+    source      = "./ec2"
+    COMPONENT   = "frontend"
+    APP_VERSION = "0.0.1"
 }
