@@ -1,7 +1,7 @@
 # Creates Security Group
-resource "aws_security_group" "allow_all" {
-  name        = "allow_${var.COMPONENT}"
-  description = "Allow All inbound traffic"
+resource "aws_security_group" "allows_all" {
+  name        = "allows_${var.COMPONENT}"
+  description = "Allows All inbound traffic"
 
   ingress {
     description = "SSH from Public"
@@ -19,6 +19,6 @@ resource "aws_security_group" "allow_all" {
   }
 
   tags = {
-    Name = "allow-${var.COMPONENT}"
+    Name = "allows-${var.COMPONENT}"
   }
 }
