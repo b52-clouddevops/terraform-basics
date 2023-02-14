@@ -3,5 +3,5 @@ resource "aws_route53_record" "component" {
   name    = "${var.COMPONENT}-dev.roboshop.internal"
   type    = "A"
   ttl     = 10
-  records = [aws_spot_instance_request.my_spot_server.private_ip]
+  records = [aws_instance.my-ec2.private_ip]
 }
