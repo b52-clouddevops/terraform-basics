@@ -19,7 +19,7 @@ resource "aws_spot_instance_request" "my_spot_server" {
       }
 
       inline = [
-          "ansible-pull -U https://github.com/b52-clouddevops/ansible.git -e COMPONENT=frontend -e ENV=dev -e APP_VERSION=${var.APP_VERSION} -e ENV=dev robot-pull.yml"
+          "ansible-pull -U https://github.com/b52-clouddevops/ansible.git -e COMPONENT=${var.COMPONENT} -e ENV=dev -e APP_VERSION=${var.APP_VERSION} -e ENV=dev robot-pull.yml"
         ]
     }
 }
